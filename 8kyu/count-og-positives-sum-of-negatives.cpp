@@ -23,7 +23,7 @@ vector<int> countPositivesSumNegatives(const vector<int>& input)
 
     for (int num : input) {
         if (num > 0) {
-            ++countPositives;
+            countPositives++;
         } else if (num < 0) {
             sumNegatives += num;
         }
