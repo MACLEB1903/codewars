@@ -14,11 +14,14 @@ If an empty value ( null, None, Nothing, nil etc. ) is given instead of an array
 
 */
 
-function sumArray(array) {
-  return array?.length > 1
-    ? array
-        .sort((a, b) => a - b)
-        .slice(1, -1)
-        .reduce((sum, n) => (sum += n), 0)
-    : 0;
+export function sumArray(array: number[] | null): number {
+  if (array) {
+    return array?.length > 1
+      ? array
+          .sort((a, b) => a - b)
+          .slice(1, -1)
+          .reduce((sum, n) => (sum += n), 0)
+      : 0;
+  }
+  return 0;
 }
