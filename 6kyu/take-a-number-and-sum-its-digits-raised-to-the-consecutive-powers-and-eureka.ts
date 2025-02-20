@@ -10,14 +10,13 @@ Let's see some cases (input -> output):
 
 */
 
-function sumDigPow(a, b) {
+function sumDigPow(a: number, b: number) {
   let array = [];
 
   for (a; a <= b; a++) {
-    let total = [...String(a)].reduce(
-      (sum, n, i) => (sum += Math.pow(+n, i + 1)),
-      0
-    );
+    let total = String(a)
+      .split("")
+      .reduce((sum, n, i) => (sum += Math.pow(Number(n), i + 1)), 0);
     if (total === a) {
       array.push(a);
     }
