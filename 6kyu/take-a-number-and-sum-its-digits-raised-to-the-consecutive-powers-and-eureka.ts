@@ -10,8 +10,8 @@ Let's see some cases (input -> output):
 
 */
 
-function sumDigPow(a: number, b: number) {
-  let array = [];
+export function sumDigPow(a: number, b: number) {
+  let array: number[] = [];
 
   for (a; a <= b; a++) {
     let total = String(a)
