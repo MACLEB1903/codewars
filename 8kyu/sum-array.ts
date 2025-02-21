@@ -14,6 +14,6 @@ Output: -2.398
 
 */
 
-function sum(numbers) {
+export function sum(numbers: any[]) {
   return numbers.reduce((sum, n) => (sum += n), 0);
 }
