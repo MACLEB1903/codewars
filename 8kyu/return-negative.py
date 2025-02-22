@@ -11,4 +11,4 @@ makeNegative(0.12); // return -0.12
 
 """
 def make_negative( number ):
-    return -abs(number)
+  return -abs(number)
