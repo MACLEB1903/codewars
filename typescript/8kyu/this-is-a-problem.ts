@@ -1,0 +1,32 @@
+/*
+
+Author: MARCEL EBALLAR
+GitHub: https://github.com/MACLEB1903
+
+Source:
+https://www.codewars.com/kata/547c71fdc5b2b38db1000098/train/typescript
+
+
+Instructions:
+We want to create a constructor function 'NameMe', which takes first name and last name as parameters. The function combines the first and last names and saves the value in "name" property.
+
+We already implemented that function, but when we actually run the code, the "name" property is accessible, but the "firstName" and "lastName" is not accessible. All the properties should be accessible. Can you find what's wrong with it? A test fixture is also available
+
+export function NameMe(first: number, last: any): any {
+    this.firstName?: any = first;
+    this.lastName = last;
+    return {name: this.firstName + ' ' + this.lastName};
+}
+
+var n = new NameMe('John', 'Doe');
+n.firstName //Expected: John
+n.lastName //Expected: Doe
+n.name //Expected: John Doe
+
+*/
+
+export function NameMe(first: string, last: string): string {
+  this.firstName = first;
+  this.lastName = last;
+  return (this.name = `${first} ${last}`);
+}
