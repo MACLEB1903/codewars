@@ -18,5 +18,5 @@ Example:
 */
 
 function filter_list(l) {
-    return l.filter((item) => typeof item === "number");
+    return l.filter((i) => typeof i === "number");
 }
