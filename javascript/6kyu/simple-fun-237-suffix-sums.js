@@ -8,7 +8,7 @@ https://www.codewars.com/kata/590938089ff3d186cb00004c/train/javascript
 
 
 Instructions:
-Task
+Task:
 Given an array a of integers, construct an array b of the same length as a such that
 
 b[0] = a[0] + a[1] + ... + a[n - 2] + a[n - 1]
