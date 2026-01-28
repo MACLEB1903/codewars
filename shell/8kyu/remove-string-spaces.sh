@@ -20,3 +20,4 @@ COMMENT
 #!/bin/bash
 
 echo "${1// /}"
+tr -d ' ' <<<"$1"
